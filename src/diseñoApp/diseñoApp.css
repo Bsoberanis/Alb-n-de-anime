@@ -1,0 +1,147 @@
+/* Diseño general de la aplicación */
+.app-container {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff4b1f, #ff9068); /* Fondo degradado */
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo de la barra de búsqueda */
+.search-bar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6f61;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #ff3b2b;
+}
+
+/* Estilo de la lista de animes */
+.anime-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.anime-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.anime-item:hover {
+  transform: scale(1.05);
+}
+
+.anime-list-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid #ff6f61;
+}
+
+.anime-item h2 {
+  font-size: 1.2em;
+  margin: 10px;
+  color: #ff6f61;
+}
+
+.anime-item p {
+  font-size: 0.9em;
+  color: #333;
+  margin: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Estilo de la lista de episodios */
+.episode-list {
+  margin-top: 30px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.episode-list h2 {
+  font-size: 2em;
+  margin: 0 0 10px;
+}
+
+.episode-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.episode-list li {
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.episode-list h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.episode-list p {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+/* Estilo de los mensajes de error */
+.error {
+  color: #ff6f61;
+  font-size: 1.2em;
+  margin-top: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+  
+  
